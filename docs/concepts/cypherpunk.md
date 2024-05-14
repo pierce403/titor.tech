@@ -1,1 +1,0 @@
-# Cypherpunk Ethos
