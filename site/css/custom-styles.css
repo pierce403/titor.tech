@@ -1,0 +1,25 @@
+/* Ensure the logo container aligns properly */
+.md-header-nav__title {
+  display: flex;
+  align-items: center;
+}
+
+/* Adjust the logo image size */
+.md-logo {
+  height: 64px !important;
+  /* or your desired height */
+  width: auto !important;
+  /* maintain aspect ratio */
+}
+
+/* Ensure the logo img itself scales properly */
+.md-logo img {
+  height: 100% !important;
+  /* ensure the image takes the full height of the container */
+  width: auto !important;
+  /* maintain aspect ratio */
+  max-height: none;
+  /* remove any max-height restrictions */
+  max-width: none;
+  /* remove any max-width restrictions */
+}
