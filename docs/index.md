@@ -1,7 +1,11 @@
-# Mission
+# Vision
 
-At Titor Technologies, our mission is to explore, analyze, and illuminate the future of technology. We are dedicated to conducting cutting-edge research in security, economics, and emerging technologies, including cryptocurrency and AI. By providing comprehensive insights and thought leadership, we aim to empower individuals and organizations to understand and navigate the complexities of the technological landscape, fostering informed and innovative advancements.
+There exists a future in which humans, augmented and assisted by intelligent machines, illuminate the galaxy and beyond with the light of consciousness. This future is not inevitable, and its realization depends on the choices we make today. Titor Technologies was founded to explore emerging tech, and make strategic investments to ensure that humanity continues to proceed down an optimal timeline. This effect can be amplified by sharing our research, and teaching our methods to others who share our vision for a bright future.
 
 ## Investment Thesis
 
-Titor Technologies is a research firm focused on exploring the five dimentional state space of our species. By focusing heavily on forecasting and futurology, strategic investments can be made to ensure an optimal prime outcome.
+The idea is simple.
+
+* We use modern tools to forecast what technologies will exist in the futures we want to see.
+* We measure the gaps between the technologies of that future and current technologies.
+* We invest in the undervalued technologies destined to grow to fill those gaps.
