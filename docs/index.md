@@ -8,4 +8,4 @@ The idea is simple.
 
 * We use modern tools to forecast what technologies will exist in the futures we want to see.
 * We measure the gaps between the technologies of that future and current technologies.
-* We invest in the undervalued technologies destined to grow to fill those gaps.
+* We invest in existing undervalued technologies destined to grow and fill those gaps.
