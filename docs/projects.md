@@ -4,45 +4,50 @@ Titor Technologies develops and maintains several innovative projects that push 
 
 ## storm.dance
 
-A decentralized note-taking and collaborative writing platform built on Web3 infrastructure. storm.dance uses IPFS for distributed storage and XMTP for encrypted messaging, enabling users to create notebooks and notes in a completely decentralized environment. This project demonstrates the future of knowledge management without reliance on centralized platforms.
+A decentralized note-taking application that enables users to create, edit, and store notes using IPFS for distributed storage and XMTP for encrypted messaging. storm.dance represents the future of knowledge management by removing dependence on centralized platforms, allowing for truly decentralized content creation and collaboration.
 
 - **Website**: [storm.dance](https://storm.dance)
 - **GitHub**: [GitHub Repository](https://github.com/pierce403/storm.dance)
-- **Technology Stack**: IPFS, XMTP, Web3, MetaMask integration
+- **Technology Stack**: TypeScript, IPFS, XMTP, Web3, MetaMask integration
+- **License**: Apache License 2.0
 
 ## w3rk.net
 
-An on-chain tasking platform designed to be UBI-ready, built for Base blockchain. This innovative work platform reimagines how tasks and labor are coordinated in a decentralized economy. The platform features escrow functionality, XMTP chat integration, and an Active Seeker Dividend (ASD) system that rewards both task completion and active participation in the network.
+A web3 jobs platform designed to provide Universal Basic Income (UBI) and Universal Economic Incentive (UEI) payments for job seekers. Built as a super-simple MVP shell that's production-deployable on Vercel, w3rk.net is ready to evolve into a comprehensive mini-app featuring escrow functionality, XMTP chat integration, and an Active Seeker Dividend (ASD) system.
 
 - **Website**: [w3rk.net](https://w3rk.net)
-- **GitHub**: [GitHub Repository](https://github.com/pierce403/w3rk)
-- **Key Features**: On-chain escrow, UBI readiness, XMTP messaging, Active Seeker Dividend
+- **GitHub**: [GitHub Repository](https://github.com/pierce403/w3rk.net)
+- **Technology**: TypeScript, Next.js App Router, Base blockchain
+- **Key Features**: UBI/UEI payments, on-chain escrow, XMTP messaging, Active Seeker Dividend
 
-## ldny.net
+## lndy.org
 
-A networking and community platform (currently undergoing technical maintenance). This project aims to foster professional connections and collaborative opportunities in the decentralized space.
+A social lending platform powered by Ethereum that enables peer-to-peer lending with smart contract automation. LNDY (a proof-of-concept for social lending protocol) allows users to create, fund, and manage loans in a decentralized manner, removing traditional financial intermediaries while maintaining security through blockchain technology.
 
-- **Website**: [ldny.net](https://ldny.net) *(temporarily unavailable)*
-- **GitHub**: [GitHub Repository](https://github.com/pierce403/ldny)
-- **Status**: Under development and maintenance
+- **Website**: [lndy.org](https://lndy.org)
+- **GitHub**: [GitHub Repository](https://github.com/pierce403/lndy)
+- **Technology**: Ethereum, TypeScript, Smart Contracts
+- **Status**: Alpha software with high-risk warnings for experimental use
 
 ## nweb.io
 
-A powerful network scanning and cybersecurity research tool that provides comprehensive network analysis capabilities. nweb.io displays detailed Nmap scan results, including open ports, service detection, and security assessments across internet-facing systems. This tool serves both security researchers and organizations looking to understand their network exposure.
+A web-based Nmap scan collection and search platform that aggregates and displays network security reconnaissance data. nweb.io provides comprehensive network analysis capabilities, showing detailed scan results including open ports, service detection, and security assessments across internet-facing systems. This tool serves security researchers and organizations seeking to understand network exposure and vulnerabilities.
 
 - **Website**: [nweb.io](https://nweb.io)
 - **GitHub**: [GitHub Repository](https://github.com/pierce403/nweb)
-- **Capabilities**: Network scanning, service detection, security assessment, real-time data analysis
+- **Technology**: CSS, HTML, Web-based interface
+- **Capabilities**: Nmap scan aggregation, service detection, port analysis, security reconnaissance
 
 ## bastet.ai
 
-An autonomous AI agent platform that represents the future of decentralized autonomous organizations (DAOs). Bastet operates as a protective entity where users contribute USDC to community treasuries, which are staked in Compound v3 on Polygon for yield generation. Contributors receive NFT crystals granting access to protected spaces, while active supporters receive "blessings" (rewards) from the yield. The ultimate goal is to create a fully autonomous agent capable of protecting and managing communities.
+An experimental infosec DAO and autonomous AI agent platform designed as a protective entity for organizations and communities. Originally conceived as a "silly idea for infosec dao," Bastet has evolved into a sophisticated system where users contribute USDC to community treasuries, which are staked in Compound v3 on Polygon for yield generation. Contributors receive NFT crystals granting access to protected spaces, while active supporters receive "blessings" (rewards) from the treasury yield.
 
 - **Website**: [bastet.ai](https://bastet.ai)
 - **GitHub**: [GitHub Repository](https://github.com/pierce403/bastet)
 - **Discord**: [Temple of Bastet](https://discord.gg/37fXv4Vkhj)
 - **OpenSea**: [Bastet AI Collection](https://opensea.io/collection/bastet-ai)
-- **Technology**: Polygon, Compound v3, USDC staking, NFT rewards, autonomous AI agents
+- **Technology**: Solidity, Polygon, Compound v3, USDC staking, NFT rewards
+- **License**: Apache License 2.0
 
 ## Strategic Alignment with Titor Mission
 
