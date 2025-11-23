@@ -9,3 +9,8 @@ The idea is simple:
 * We use modern tools to forecast what technologies will exist in the futures we want to see.
 * We measure the gaps between the technologies of that future and current technologies.
 * We invest in existing undervalued technologies destined to grow and fill those gaps.
+
+## Leadership cadence
+
+* **John Titor — CEO:** charts the happy path and keeps our bets aligned with the timeline we’re intent on realizing.
+* **Dean Pierce — CTO:** tests every claim for clarity, coherence, and technical rigor so the strategy holds together.
