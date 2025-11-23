@@ -1,1 +1,1 @@
-# community owned infrastructure
+# Community-Owned Infrastructure

@@ -1,1 +1,1 @@
-# mechanical pantheon
+# Mechanical Pantheon

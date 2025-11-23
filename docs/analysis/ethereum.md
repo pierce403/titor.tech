@@ -1,1 +1,1 @@
-# Etheruem
+# Ethereum

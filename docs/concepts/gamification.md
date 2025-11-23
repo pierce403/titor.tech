@@ -1,4 +1,4 @@
-# gamification
+# Gamification
 
 In the happy path future of automation, we envision a world where most people are fully independent educators, builders, mechanics, or explorers. They work when and where they feel is best to serve their community. However, there will still likely be tasks that require large-scale coordination efforts. These tasks will be performed by the gamers.
 

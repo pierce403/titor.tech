@@ -1,1 +1,1 @@
-# Thorchain
+# THORChain
