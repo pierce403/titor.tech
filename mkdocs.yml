@@ -21,7 +21,7 @@ nav:
       - Gamification: concepts/gamification.md
       - Lindy: concepts/lindy.md
       - Cypherpunk: concepts/cypherpunk.md
-      - Base economies: concepts/base-economies.md
+      # Base economies: concepts/base-economies.md  # (removed for now)
       - Mechanical pantheon: concepts/mechanical-pantheon.md
   - Analysis: analysis/index.md
   - Forecasts: forecasts/index.md
