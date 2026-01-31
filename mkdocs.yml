@@ -7,10 +7,24 @@ nav:
   - Home: index.md
   - Blog: blog/index.md
   - Tags: tags.md
-  - Projects: projects
-  - Concepts: concepts
-  - Analysis: analysis
-  - Forecasts: forecasts
+  - Projects:
+      - Overview: projects/index.md
+      - NWEB: projects/nweb.md
+      - LNDY: projects/lndy.md
+      - W3RK: projects/w3rk.md
+      - Bastet: projects/bastet.md
+      - Storm Dance: projects/storm-dance.md
+  - Concepts:
+      - Overview: concepts/index.md
+      - Infrastructure: concepts/infra.md
+      - Sustainability: concepts/sustainability.md
+      - Gamification: concepts/gamification.md
+      - Lindy: concepts/lindy.md
+      - Cypherpunk: concepts/cypherpunk.md
+      - Base economies: concepts/base-economies.md
+      - Mechanical pantheon: concepts/mechanical-pantheon.md
+  - Analysis: analysis/index.md
+  - Forecasts: forecasts/index.md
 
 theme:
   name: material
