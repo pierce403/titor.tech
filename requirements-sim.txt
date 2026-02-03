@@ -1,0 +1,7 @@
+# Optional dependencies for running the energy + AI compute stress-test model
+numpy
+pandas
+matplotlib
+seaborn
+tqdm
+# cupy-cuda12x  # optional (if CUDA + compatible wheels are available)
