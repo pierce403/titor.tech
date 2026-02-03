@@ -23,7 +23,16 @@ nav:
       - Cypherpunk: concepts/cypherpunk.md
       # Base economies: concepts/base-economies.md  # (removed for now)
       - Mechanical pantheon: concepts/mechanical-pantheon.md
-  - Analysis: analysis/index.md
+  - Analysis:
+      - Overview: analysis/index.md
+      - Farcaster: analysis/farcaster.md
+      - XMTP: analysis/xmtp.md
+      - Bitcoin: analysis/bitcoin.md
+      - Ethereum: analysis/ethereum.md
+      - Solana: analysis/solana.md
+      - EigenLayer: analysis/eigenlayer.md
+      - LayerZero: analysis/layerzero.md
+      - THORChain: analysis/thorchain.md
   - Forecasts:
       - Overview: forecasts/index.md
       - 2030 — AGI Era: forecasts/2030.md
