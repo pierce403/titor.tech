@@ -65,7 +65,10 @@ extra_javascript:
 
 plugins:
   - search
-  - blog
+  - blog:
+      blog_dir: blog
+      post_dir: blog/posts
+      post_url_format: "{date}/{slug}"
   - tags
   - rss:
       match_path: blog/posts/.*
