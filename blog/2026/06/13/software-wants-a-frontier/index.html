@@ -1292,6 +1292,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#tests-are-inherited-judgment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tests are inherited judgment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#a-rewrite-as-a-scoreboard" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1318,6 +1329,17 @@
     <span class="md-ellipsis">
       
         The software ecosystem after heroism
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#democratized-agency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Democratized agency
       
     </span>
   </a>
@@ -1396,7 +1418,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              6 min read
+                              7 min read
                             
                           </span>
                         </div>
@@ -1526,6 +1548,12 @@
 <p>One agent will not rewrite FFmpeg. One startup probably will not either. FFmpeg is too broad, too weird, too full of edge cases, and too deeply embedded in the world.</p>
 <p>A swarm might.</p>
 <p>But only if the swarm has a frontier.</p>
+<h2 id="tests-are-inherited-judgment">Tests are inherited judgment</h2>
+<p>FFmpeg is an unusually good candidate for this because the ecosystem already did decades of unpaid preparation work.</p>
+<p>FATE, sample media, historical bug reports, fuzz cases, and regression tests are the map. They encode the files that broke, the formats that lied, the decoders that drifted, and the bugs that returned when nobody was looking.</p>
+<p>That corpus is human judgment in executable form.</p>
+<p>A Rust rewrite can inherit it. Agents can inherit it. The swarm does not need to understand all of FFmpeg at once. It needs to move one red test to green without turning another green test red. Then it needs to log the attempt, preserve the patch, and hand the new frontier to the next agent.</p>
+<p>Autoresearch works wherever human experience has been compiled into tests.</p>
 <h2 id="a-rewrite-as-a-scoreboard">A rewrite as a scoreboard</h2>
 <p>rmpeg does not begin by claiming to replace FFmpeg. It begins by measuring itself against FFmpeg.</p>
 <p>The current Phase 1 metric is simple: how many FFmpeg-accepted sample media files in the upstream FATE corpus can rmpeg inspect correctly?</p>
@@ -1591,6 +1619,14 @@
 <p>That is a better use of scarce human judgment.</p>
 <p>Humans set direction. Machines explore the search space. Reality vetoes bad ideas. Maintainers decide what enters the commons.</p>
 <p>That is the happy path.</p>
+<h2 id="democratized-agency">Democratized agency</h2>
+<p>We have spent the last few years talking about the democratization of intelligence. The phrase was directionally right, but incomplete.</p>
+<p>Access to a model gives people answers. Access to agentic loops gives people leverage.</p>
+<p>The deeper shift is democratized agency: the ability for anyone to point bounded machine effort at a frontier they care about and have that effort tested against reality.</p>
+<p>That matters for open source. A contributor may not know how to write a demuxer, but they may care deeply that old family videos, public archives, or independent media tools survive. Their daily inference tokens can fund attempts against that slice of the rmpeg corpus. The project decides what counts as progress. The contributor decides what deserves their compute.</p>
+<p>The same pattern can extend to biomedical replication, protein design, orbital debris tracking, open prosthetics, climate adaptation, formal verification, and endangered language preservation. A patient advocate, space enthusiast, teacher, archivist, or security researcher can choose a frontier and send agents climbing.</p>
+<p>This needs discipline. Maintainers cannot receive a firehose of AI spam. Projects need safe task surfaces, sandboxes, reproducible commands, promotion rules, and queues that filter failed attempts before they reach human review.</p>
+<p>But if we build that layer correctly, agency stops being scarce in the old way. The limiting factor becomes the quality of our frontiers, the honesty of our metrics, and the wisdom of the people choosing where effort goes.</p>
 <h2 id="from-projects-to-civilization">From projects to civilization</h2>
 <p>This pattern does not stop at software.</p>
 <p>Science needs replication frontiers. Medicine needs outcome frontiers. Education needs learning frontiers. Policy needs measurable civic frontiers. Security needs exploit and proof frontiers. Knowledge bases need provenance and contradiction frontiers.</p>
