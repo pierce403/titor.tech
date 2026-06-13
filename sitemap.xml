@@ -2,190 +2,194 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://titor.tech/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/tags/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/analysis/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/analysis/bitcoin/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/analysis/eigenlayer/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/analysis/ethereum/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/analysis/farcaster/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/analysis/layerzero/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/analysis/solana/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/analysis/thorchain/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/analysis/xmtp/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/blog/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/blog/2026/02/02/agent-adoption--safety-norms-as-a-contagion-permission-manifests-provenance-and-adversaries/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/blog/2026/02/02/energy--ai-compute-stress-test-20302045-how-big-could-the-electricity-bite-get/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/blog/2026/02/08/timestream-s-14-2035-a-day-in-the-life-of-hyperlocal-supply-chains--crypto-reputation/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/blog/2026/02/02/cascading-supply-shocks-with-a-gpu-friendly-inputoutput-network-model/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/blog/2026/01/30/mkrbox-and-the-case-for-open-fabrication/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
+    </url>
+    <url>
+         <loc>https://titor.tech/blog/2026/06/13/software-wants-a-frontier/</loc>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/blog/2026/01/28/welcome-to-the-titor-blog/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/concepts/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/concepts/cypherpunk/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/concepts/gamification/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/concepts/infra/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/concepts/lindy/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/concepts/mechanical-pantheon/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/concepts/sustainability/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/forecasts/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/forecasts/2030/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/forecasts/2040/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/forecasts/2045/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/projects/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/projects/bastet/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/projects/lndy/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/projects/nweb/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/projects/storm-dance/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/projects/w3rk/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/blog/archive/2026/</loc>
-         <lastmod>2026-02-08</lastmod>
-    </url>
-    <url>
-         <loc>https://titor.tech/blog/category/forecasts/</loc>
-         <lastmod>2026-02-08</lastmod>
-    </url>
-    <url>
-         <loc>https://titor.tech/blog/category/crypto/</loc>
-         <lastmod>2026-02-08</lastmod>
-    </url>
-    <url>
-         <loc>https://titor.tech/blog/category/infrastructure/</loc>
-         <lastmod>2026-02-08</lastmod>
-    </url>
-    <url>
-         <loc>https://titor.tech/blog/category/research/</loc>
-         <lastmod>2026-02-08</lastmod>
-    </url>
-    <url>
-         <loc>https://titor.tech/blog/category/sustainability/</loc>
-         <lastmod>2026-02-08</lastmod>
-    </url>
-    <url>
-         <loc>https://titor.tech/blog/category/ai/</loc>
-         <lastmod>2026-02-08</lastmod>
-    </url>
-    <url>
-         <loc>https://titor.tech/blog/category/analysis/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/blog/category/thesis/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
+    </url>
+    <url>
+         <loc>https://titor.tech/blog/category/ai/</loc>
+         <lastmod>2026-06-13</lastmod>
+    </url>
+    <url>
+         <loc>https://titor.tech/blog/category/infrastructure/</loc>
+         <lastmod>2026-06-13</lastmod>
+    </url>
+    <url>
+         <loc>https://titor.tech/blog/category/forecasts/</loc>
+         <lastmod>2026-06-13</lastmod>
+    </url>
+    <url>
+         <loc>https://titor.tech/blog/category/crypto/</loc>
+         <lastmod>2026-06-13</lastmod>
+    </url>
+    <url>
+         <loc>https://titor.tech/blog/category/research/</loc>
+         <lastmod>2026-06-13</lastmod>
+    </url>
+    <url>
+         <loc>https://titor.tech/blog/category/sustainability/</loc>
+         <lastmod>2026-06-13</lastmod>
+    </url>
+    <url>
+         <loc>https://titor.tech/blog/category/analysis/</loc>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/blog/category/robotics/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/blog/category/manufacturing/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
     <url>
          <loc>https://titor.tech/blog/category/announcements/</loc>
-         <lastmod>2026-02-08</lastmod>
+         <lastmod>2026-06-13</lastmod>
     </url>
 </urlset>
