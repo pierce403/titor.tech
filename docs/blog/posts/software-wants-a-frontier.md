@@ -97,6 +97,18 @@ A swarm might.
 
 But only if the swarm has a frontier.
 
+## Tests are inherited judgment
+
+FFmpeg is an unusually good candidate for this because the ecosystem already did decades of unpaid preparation work.
+
+FATE, sample media, historical bug reports, fuzz cases, and regression tests are the map. They encode the files that broke, the formats that lied, the decoders that drifted, and the bugs that returned when nobody was looking.
+
+That corpus is human judgment in executable form.
+
+A Rust rewrite can inherit it. Agents can inherit it. The swarm does not need to understand all of FFmpeg at once. It needs to move one red test to green without turning another green test red. Then it needs to log the attempt, preserve the patch, and hand the new frontier to the next agent.
+
+Autoresearch works wherever human experience has been compiled into tests.
+
 ## A rewrite as a scoreboard
 
 rmpeg does not begin by claiming to replace FFmpeg. It begins by measuring itself against FFmpeg.
@@ -184,6 +196,22 @@ That is a better use of scarce human judgment.
 Humans set direction. Machines explore the search space. Reality vetoes bad ideas. Maintainers decide what enters the commons.
 
 That is the happy path.
+
+## Democratized agency
+
+We have spent the last few years talking about the democratization of intelligence. The phrase was directionally right, but incomplete.
+
+Access to a model gives people answers. Access to agentic loops gives people leverage.
+
+The deeper shift is democratized agency: the ability for anyone to point bounded machine effort at a frontier they care about and have that effort tested against reality.
+
+That matters for open source. A contributor may not know how to write a demuxer, but they may care deeply that old family videos, public archives, or independent media tools survive. Their daily inference tokens can fund attempts against that slice of the rmpeg corpus. The project decides what counts as progress. The contributor decides what deserves their compute.
+
+The same pattern can extend to biomedical replication, protein design, orbital debris tracking, open prosthetics, climate adaptation, formal verification, and endangered language preservation. A patient advocate, space enthusiast, teacher, archivist, or security researcher can choose a frontier and send agents climbing.
+
+This needs discipline. Maintainers cannot receive a firehose of AI spam. Projects need safe task surfaces, sandboxes, reproducible commands, promotion rules, and queues that filter failed attempts before they reach human review.
+
+But if we build that layer correctly, agency stops being scarce in the old way. The limiting factor becomes the quality of our frontiers, the honesty of our metrics, and the wisdom of the people choosing where effort goes.
 
 ## From projects to civilization
 
