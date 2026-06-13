@@ -85,7 +85,7 @@ This morning we started [rmpeg](https://rmpeg.org/), an experiment to rewrite FF
 
 FFmpeg is invisible civilizational infrastructure. It touches video, audio, streaming, cameras, phones, browsers, podcasts, archives, creative tools, surveillance systems, medical workflows, and a depressing number of forgotten shell scripts. It is also a huge C attack surface that has accumulated decades of complexity.
 
-The security dump yesterday made the problem hard to ignore. FFmpeg's own security page lists a long tail of CVEs, including recent 2025 entries and BIGSLEEP-reported issues. That does not make FFmpeg bad. It makes FFmpeg important. Important software gets attacked. Old unsafe code gives attackers plenty of room to work.
+The [security dump yesterday](https://ffmpeg.org/security.html) made the problem hard to ignore. FFmpeg's own security page lists a long tail of CVEs, including recent 2025 entries and BIGSLEEP-reported issues. That does not make FFmpeg bad. It makes FFmpeg important. Important software gets attacked. Old unsafe code gives attackers plenty of room to work.
 
 The April Fools version of the future was "rewrite it in Rust."
 
