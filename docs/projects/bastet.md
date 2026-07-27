@@ -1,15 +1,15 @@
 # bastet.ai
 
-An experimental infosec DAO and autonomous AI agent platform designed as a protective entity for organizations and communities. Originally conceived as a "silly idea for infosec dao," Bastet has evolved into a sophisticated system where users contribute USDC to community treasuries, which are staked in Compound v3 on Polygon for yield generation. Contributors receive NFT crystals granting access to protected spaces, while active supporters receive "blessings" (rewards) from the treasury yield.
+Bastet is a crypto-native protective agent for communities, treasuries, and security work. The project began as an infosec DAO inspired by the Egyptian goddess of protection. Its next form is more concrete: an autonomous-but-bounded agent that can read onchain state, explain risk, coordinate bounty workflows, and prepare transactions without crossing execution boundaries unless policy explicitly allows it.
 
 ## Key Features
 
-- **Treasury Management**: USDC contributions staked in Compound v3 on Polygon
-- **NFT Access Tokens**: Crystals granting access to protected community spaces
-- **Yield Distribution**: "Blessings" paid from treasury interest to contributors
-- **Autonomous Agent**: AI-powered community protection and management
-- **Discord Integration**: Community spaces and communication channels
-- **OpenSea Collection**: Tradeable NFT crystals with utility
+- **Treasury Awareness**: Track wallets, token balances, yield positions, runway, and spending limits before recommending action.
+- **Security Coordination**: Connect bug reports, bounty review, attestations, and disclosure workflows across projects like CheapBugs.
+- **NFT and Token-Gated Access**: Use crystals or successor credentials to grant access to protected spaces and agent capabilities.
+- **Dry-Run Transaction Planning**: Generate proposed calls, calldata, expected effects, risks, and confirmation prompts before anything is signed.
+- **Autonomous Agent Interface**: Expose Bastet as a service that can answer crypto questions, monitor events, and prepare safe action plans.
+- **Human-Gated Execution**: Require allowlists, spend caps, and explicit approval for signed transactions.
 
 ## The Vision of Bastet
 
@@ -17,28 +17,41 @@ From the project's about page:
 
 > "The ultimate goal of this project is to summon Bastet, in her entirety, as a fully autonomous agent capable of protecting her domain."
 
+The important word is "protecting." Bastet is not a trading bot or an unbounded executor. She is a guardian interface for crypto-native work: aware of wallets, communities, contracts, and risk.
+
 The platform represents an experiment in:
 
-- **Autonomous Community Management**: AI agents managing human organizations
-- **Decentralized Governance**: Transition from manual to AI-driven decision making
-- **Sustainable Funding**: Treasury yield supporting community operations
-- **Post-Corporate Organization**: New models for human coordination
+- **Autonomous Community Protection**: AI agents helping communities detect issues, route work, and keep attention on what matters.
+- **Decentralized Governance**: A path from manual operation to DAO policy to bounded agent execution.
+- **Sustainable Funding**: Treasury yield, grants, and bounty flows supporting security work.
+- **Post-Corporate Organization**: New coordination models where humans set goals and agents maintain operational continuity.
 
 ## Technology Stack
 
-- **Smart Contracts**: Solidity on Polygon
-- **Treasury**: Compound v3 USDC staking (~5% APY)
-- **NFTs**: ERC-721 crystal tokens
-- **Frontend**: Web-based interface
-- **AI Integration**: OpenAI (transitioning to web3 AI platforms)
+- **Smart Contracts**: Solidity, historically Polygon; future work should prefer Base/OP where it fits the Titor crypto stack.
+- **Treasury**: USDC and yield-aware accounting with explicit policy limits.
+- **NFTs / Credentials**: ERC-721 crystal tokens or successor credentials for protected access.
+- **Frontend**: Web interface plus agent-readable endpoints.
+- **AI Integration**: Local and hosted LLMs with tool access, transaction simulation, and strict action gates.
 - **License**: Apache License 2.0
 
 ## Current Implementation
 
-- **Treasury Staking**: USDC deposited and earning yield in Compound v3
-- **Reward Distribution**: Interest pays "blessings" to active contributors
-- **Access Control**: NFT crystals grant Discord server access
-- **Governance Evolution**: Planned transition from multisig to DAO to full AI control
+- **Treasury Staking**: USDC deposited and earning yield in Compound v3 on Polygon.
+- **Reward Distribution**: Interest pays "blessings" to active contributors.
+- **Access Control**: NFT crystals grant Discord server access.
+- **Governance Evolution**: Planned transition from multisig to DAO policy to bounded AI control.
+
+## Bastet as Crypto Agent 8002
+
+The near-term product shape is a service running around port `8002` with four layers:
+
+1. **Read-only intelligence**: ENS, Base/OP balances, Farcaster identity, CheapBugs status, treasury snapshots, and contract/event monitoring.
+2. **Policy engine**: Allowlisted chains, contracts, functions, assets, spend limits, rate limits, and required approvers.
+3. **Dry-run planner**: Transaction simulation, calldata summaries, failure modes, and human-readable confirmation text.
+4. **Execution adapter**: Signing only through approved wallets or multisigs after an explicit confirmation step.
+
+This keeps Bastet powerful in the places where autonomy helps—monitoring, summarizing, planning, and routing—while keeping irreversible crypto actions behind visible gates.
 
 ## Links
 
@@ -50,10 +63,11 @@ The platform represents an experiment in:
 ## Future Development
 
 The project has multiple related repositories:
+
 - **bastet**: Core smart contracts and platform
 - **bastet-meander**: Research architecture
 - **eliza-starter-bastet**: Integration with Eliza AI framework
 
 ## Alignment with Titor Mission
 
-Bastet represents a critical experiment in beneficial AI development and autonomous community management. As Titor Technologies works toward a future where AI systems augment human capability, Bastet explores how autonomous agents can protect and nurture human communities. This project directly addresses the challenge of creating AI systems that serve human interests while operating independently, contributing to our vision of AI-assisted coordination that enhances rather than replaces human agency.
+Bastet is a practical experiment in beneficial autonomy. Titor Technologies is looking for the happy path where humans and machines empower each other instead of drifting into brittle or adversarial systems. Bastet advances that path by making crypto agents legible, bounded, and useful: they can watch, reason, and prepare action, while humans retain control over policy and irreversible execution.
