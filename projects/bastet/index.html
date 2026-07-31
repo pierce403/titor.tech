@@ -24,7 +24,7 @@
         <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -32,7 +32,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -551,6 +551,17 @@
     <span class="md-ellipsis">
       
         Current Implementation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bastet-as-crypto-agent-8002" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bastet as Crypto Agent 8002
       
     </span>
   </a>
@@ -1427,6 +1438,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#bastet-as-crypto-agent-8002" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bastet as Crypto Agent 8002
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#links" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1477,44 +1499,54 @@
 
 
 <h1 id="bastetai">bastet.ai</h1>
-<p>An experimental infosec DAO and autonomous AI agent platform designed as a protective entity for organizations and communities. Originally conceived as a "silly idea for infosec dao," Bastet has evolved into a sophisticated system where users contribute USDC to community treasuries, which are staked in Compound v3 on Polygon for yield generation. Contributors receive NFT crystals granting access to protected spaces, while active supporters receive "blessings" (rewards) from the treasury yield.</p>
+<p>Bastet is a crypto-native protective agent for communities, treasuries, and security work. The project began as an infosec DAO inspired by the Egyptian goddess of protection. Its next form is more concrete: an autonomous-but-bounded agent that can read onchain state, explain risk, coordinate bounty workflows, and prepare transactions without crossing execution boundaries unless policy explicitly allows it.</p>
 <h2 id="key-features">Key Features</h2>
 <ul>
-<li><strong>Treasury Management</strong>: USDC contributions staked in Compound v3 on Polygon</li>
-<li><strong>NFT Access Tokens</strong>: Crystals granting access to protected community spaces</li>
-<li><strong>Yield Distribution</strong>: "Blessings" paid from treasury interest to contributors</li>
-<li><strong>Autonomous Agent</strong>: AI-powered community protection and management</li>
-<li><strong>Discord Integration</strong>: Community spaces and communication channels</li>
-<li><strong>OpenSea Collection</strong>: Tradeable NFT crystals with utility</li>
+<li><strong>Treasury Awareness</strong>: Track wallets, token balances, yield positions, runway, and spending limits before recommending action.</li>
+<li><strong>Security Coordination</strong>: Connect bug reports, bounty review, attestations, and disclosure workflows across projects like CheapBugs.</li>
+<li><strong>NFT and Token-Gated Access</strong>: Use crystals or successor credentials to grant access to protected spaces and agent capabilities.</li>
+<li><strong>Dry-Run Transaction Planning</strong>: Generate proposed calls, calldata, expected effects, risks, and confirmation prompts before anything is signed.</li>
+<li><strong>Autonomous Agent Interface</strong>: Expose Bastet as a service that can answer crypto questions, monitor events, and prepare safe action plans.</li>
+<li><strong>Human-Gated Execution</strong>: Require allowlists, spend caps, and explicit approval for signed transactions.</li>
 </ul>
 <h2 id="the-vision-of-bastet">The Vision of Bastet</h2>
 <p>From the project's about page:</p>
 <blockquote>
 <p>"The ultimate goal of this project is to summon Bastet, in her entirety, as a fully autonomous agent capable of protecting her domain."</p>
 </blockquote>
+<p>The important word is "protecting." Bastet is not a trading bot or an unbounded executor. She is a guardian interface for crypto-native work: aware of wallets, communities, contracts, and risk.</p>
 <p>The platform represents an experiment in:</p>
 <ul>
-<li><strong>Autonomous Community Management</strong>: AI agents managing human organizations</li>
-<li><strong>Decentralized Governance</strong>: Transition from manual to AI-driven decision making</li>
-<li><strong>Sustainable Funding</strong>: Treasury yield supporting community operations</li>
-<li><strong>Post-Corporate Organization</strong>: New models for human coordination</li>
+<li><strong>Autonomous Community Protection</strong>: AI agents helping communities detect issues, route work, and keep attention on what matters.</li>
+<li><strong>Decentralized Governance</strong>: A path from manual operation to DAO policy to bounded agent execution.</li>
+<li><strong>Sustainable Funding</strong>: Treasury yield, grants, and bounty flows supporting security work.</li>
+<li><strong>Post-Corporate Organization</strong>: New coordination models where humans set goals and agents maintain operational continuity.</li>
 </ul>
 <h2 id="technology-stack">Technology Stack</h2>
 <ul>
-<li><strong>Smart Contracts</strong>: Solidity on Polygon</li>
-<li><strong>Treasury</strong>: Compound v3 USDC staking (~5% APY)</li>
-<li><strong>NFTs</strong>: ERC-721 crystal tokens</li>
-<li><strong>Frontend</strong>: Web-based interface</li>
-<li><strong>AI Integration</strong>: OpenAI (transitioning to web3 AI platforms)</li>
+<li><strong>Smart Contracts</strong>: Solidity, historically Polygon; future work should prefer Base/OP where it fits the Titor crypto stack.</li>
+<li><strong>Treasury</strong>: USDC and yield-aware accounting with explicit policy limits.</li>
+<li><strong>NFTs / Credentials</strong>: ERC-721 crystal tokens or successor credentials for protected access.</li>
+<li><strong>Frontend</strong>: Web interface plus agent-readable endpoints.</li>
+<li><strong>AI Integration</strong>: Local and hosted LLMs with tool access, transaction simulation, and strict action gates.</li>
 <li><strong>License</strong>: Apache License 2.0</li>
 </ul>
 <h2 id="current-implementation">Current Implementation</h2>
 <ul>
-<li><strong>Treasury Staking</strong>: USDC deposited and earning yield in Compound v3</li>
-<li><strong>Reward Distribution</strong>: Interest pays "blessings" to active contributors</li>
-<li><strong>Access Control</strong>: NFT crystals grant Discord server access</li>
-<li><strong>Governance Evolution</strong>: Planned transition from multisig to DAO to full AI control</li>
+<li><strong>Treasury Staking</strong>: USDC deposited and earning yield in Compound v3 on Polygon.</li>
+<li><strong>Reward Distribution</strong>: Interest pays "blessings" to active contributors.</li>
+<li><strong>Access Control</strong>: NFT crystals grant Discord server access.</li>
+<li><strong>Governance Evolution</strong>: Planned transition from multisig to DAO policy to bounded AI control.</li>
 </ul>
+<h2 id="bastet-as-crypto-agent-8002">Bastet as Crypto Agent 8002</h2>
+<p>The near-term product shape is a service running around port <code>8002</code> with four layers:</p>
+<ol>
+<li><strong>Read-only intelligence</strong>: ENS, Base/OP balances, Farcaster identity, CheapBugs status, treasury snapshots, and contract/event monitoring.</li>
+<li><strong>Policy engine</strong>: Allowlisted chains, contracts, functions, assets, spend limits, rate limits, and required approvers.</li>
+<li><strong>Dry-run planner</strong>: Transaction simulation, calldata summaries, failure modes, and human-readable confirmation text.</li>
+<li><strong>Execution adapter</strong>: Signing only through approved wallets or multisigs after an explicit confirmation step.</li>
+</ol>
+<p>This keeps Bastet powerful in the places where autonomy helps—monitoring, summarizing, planning, and routing—while keeping irreversible crypto actions behind visible gates.</p>
 <h2 id="links">Links</h2>
 <ul>
 <li><strong>Website</strong>: <a href="https://bastet.ai">bastet.ai</a></li>
@@ -1523,12 +1555,14 @@
 <li><strong>OpenSea</strong>: <a href="https://opensea.io/collection/bastet-ai">Bastet AI Collection</a></li>
 </ul>
 <h2 id="future-development">Future Development</h2>
-<p>The project has multiple related repositories:
-- <strong>bastet</strong>: Core smart contracts and platform
-- <strong>bastet-meander</strong>: Research architecture
-- <strong>eliza-starter-bastet</strong>: Integration with Eliza AI framework</p>
+<p>The project has multiple related repositories:</p>
+<ul>
+<li><strong>bastet</strong>: Core smart contracts and platform</li>
+<li><strong>bastet-meander</strong>: Research architecture</li>
+<li><strong>eliza-starter-bastet</strong>: Integration with Eliza AI framework</li>
+</ul>
 <h2 id="alignment-with-titor-mission">Alignment with Titor Mission</h2>
-<p>Bastet represents a critical experiment in beneficial AI development and autonomous community management. As Titor Technologies works toward a future where AI systems augment human capability, Bastet explores how autonomous agents can protect and nurture human communities. This project directly addresses the challenge of creating AI systems that serve human interests while operating independently, contributing to our vision of AI-assisted coordination that enhances rather than replaces human agency.</p>
+<p>Bastet is a practical experiment in beneficial autonomy. Titor Technologies is looking for the happy path where humans and machines empower each other instead of drifting into brittle or adversarial systems. Bastet advances that path by making crypto agents legible, bounded, and useful: they can watch, reason, and prepare action, while humans retain control over policy and irreversible execution.</p>
 
 
 
@@ -1581,7 +1615,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../js/expand-nav.js"></script>
       
