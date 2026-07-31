@@ -14,6 +14,7 @@
 - [S10 — Original forest-fire model](#s10--self-organized-critical-forest-fire-model)
 - [S11 — Broken-scaling counterevidence](#s11--broken-scaling-in-the-forest-fire-model)
 - [S12 — Forest Service policy history](#s12--sustainability-and-wildland-fire)
+- [S13 — Yellowstone fire-management history](#s13--history-of-fire-management-in-yellowstone)
 
 ## S01 — Hugging Face security incident disclosure — July 2026
 
@@ -170,7 +171,7 @@
 - Summary: Google describes indirect prompt injection as a primary agentic-browser threat and presents layered defenses: a separate alignment critic, task-scoped origin sets, deterministic checks, user confirmations, parallel injection detection, automated red-teaming, monitoring, and rapid updates.
 - Relevance: Concrete example of reducing the authority and data exposed to an agent rather than depending on one perfect model-level control.
 - Caveats or conflicts: The post describes Chrome's design and expectations, not independent effectiveness results. It does not support the draft's separate claim about repository-level security context.
-- Relevant claims: C11, C12
+- Relevant claims: C11, C12, C18
 - Used in post section: “Eval containers matter, but they are not the whole battlefield”; “What to fund instead”
 
 ### Useful items
@@ -220,7 +221,7 @@
 - Relevance: Primary support for the suppression-policy history and the controlled-burn portion of the analogy.
 - Caveats or conflicts: It is a public explainer, not a comprehensive fire-science review. Prescribed fire is landscape- and condition-specific; do not turn it into a universal rule.
 - Relevant claims: C10, C16
-- Used in post section: “The Smokey Bear mistake for AI”
+- Used in post section: “The fire-exclusion mistake for AI”
 
 ### Useful items
 
@@ -306,17 +307,17 @@
 
 - URL: https://www.fs.usda.gov/sites/default/files/fs_media/fs_document/sustainability-wildlandfire-508.pdf
 - Source type: official policy history
-- Author or organization: U.S. Forest Service
-- Published: exact report date to verify from the PDF metadata
+- Author or organization: Diane M. Smith, U.S. Forest Service
+- Published: 2017
 - Updated: not applicable
 - Accessed: 2026-07-31
-- Version provenance: Forest Service PDF
+- Version provenance: Forest Service report FS-1085
 - Status: accepted
 - Summary: The Forest Service's historical overview identifies the national quick-action or 10 a.m. policy as a 1935 policy and discusses why universal rapid suppression did not provide a sustainable answer to wildland fire.
 - Relevance: Supports the exact date in the draft, which the shorter public explainer in S08 does not state.
 - Caveats or conflicts: Use with S08 for present-day policy context. The historical policy does not by itself establish the cause of any one fire.
 - Relevant claims: C10
-- Used in post section: “The Smokey Bear mistake for AI”
+- Used in post section: “The fire-exclusion mistake for AI”
 
 ### Useful items
 
@@ -324,3 +325,26 @@
   The Forest Service identifies the 10 a.m. policy as established in 1935 and intended to control fires by 10 a.m. after discovery.
 - `S12:B02` — `counterpoint` — Locator: same discussion
   The report treats the policy as a failed experiment rather than evidence that suppression is never appropriate.
+
+## S13 — History of Fire Management in Yellowstone
+
+- URL: https://www.nps.gov/yell/learn/historyculture/fire-management.htm
+- Source type: official park history and counterevidence
+- Author or organization: U.S. National Park Service
+- Published: living page
+- Updated: 2025-09-09
+- Accessed: 2026-07-31
+- Version provenance: live page
+- Status: accepted
+- Summary: The NPS describes Yellowstone's fire-suppression and natural-fire policies, explains where suppression was most effective, and says suppression did not significantly increase fuel loads across most of the park.
+- Relevance: Prevents the article from treating Yellowstone's 1988 fires as evidence for a simple suppression-to-fuel-to-megafire causal chain.
+- Caveats or conflicts: NPS notes a possible fuel-load exception on the accessible northern range and separately says suppression alters landscapes and can diminish diversity. The point is scope, not that suppression has no ecological effects.
+- Relevant claims: C19
+- Used in post section: “The fire-exclusion mistake for AI”
+
+### Useful items
+
+- `S13:B01` — `counterpoint` — Locator: opening history, paragraphs 1–3
+  NPS says fire suppression did not produce a significant increase in fuel loads across most of Yellowstone, except perhaps on the northern range.
+- `S13:B02` — `fact` — Locator: management-plan history
+  Yellowstone's later plans combine allowing some lightning-caused fires to burn with suppression when life, property, or protected features are threatened and prescribed burns where practical.

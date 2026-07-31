@@ -39,7 +39,7 @@ Agent escapes become systemic incidents when they encounter accumulated software
 - Target domain: Agent tools, identities, credentials, services, vulnerabilities, and connected authority.
 - What maps cleanly: Local triggers can cascade through connected fuel; reducing connectivity and accumulated fuel can reduce blast radius; small failures can provide learning signals.
 - Where the analogy breaks: The Drossel–Schwabl model was built to study statistical behavior, not faithfully simulate forests or software. Its claim to scale-free criticality is disputed in later work. Real wildfire behavior is climate-, ecology-, terrain-, and policy-dependent. Software permissions and adversaries are designed systems, not trees.
-- Evidence needed before using it: Use the model as a mental model, cite scientific caveats, scope the Yellowstone acreage correctly, and avoid claiming that all real wildfire sizes follow one power law.
+- Evidence needed before using it: Use the model as a mental model, cite scientific caveats, scope the Yellowstone acreage correctly, avoid claiming that all real wildfire sizes follow one power law, and do not treat Yellowstone 1988 as evidence of suppression-created fuel.
 
 # Strongest counterargument
 
@@ -60,19 +60,20 @@ Agent escapes become systemic incidents when they encounter accumulated software
 
 # Open questions
 
-- [ ] Find a primary source for the draft's claim about Google's use of repository-level security context, or remove/narrow it.
-- [ ] Support or narrow the comparison between human attacker speed and an agent swarm trying thousands of hypotheses.
-- [ ] Decide whether the post should name the Drossel–Schwabl model and briefly acknowledge the broken-scaling literature.
-- [ ] Replace “Yellowstone ... burn 1.4 million acres” with the scoped NPS figures: about 1.4 million acres in the Greater Yellowstone Ecosystem and 793,880 acres inside the park.
-- [ ] Attribute Hugging Face's initial uncertainty separately from its later technical reconstruction and OpenAI's account.
-- [ ] Verify the exact timestamp and wording of the Veritasium segment before using it for anything beyond narrative inspiration.
-- [ ] Decide whether “controlled burns” is the best label for red-team exercises, given the risk of implying that real incidents should be allowed.
+- [x] Remove the unsupported claim about Google's repository-level security context; use Agent Origin Sets only as an explicit runtime analogy for the post's repository-map recommendation.
+- [x] Replace the human-versus-swarm comparison with Hugging Face's measured campaign volume and a clear non-generalization caveat.
+- [x] Name the Drossel–Schwabl model, describe self-organized criticality as the original proposal, and include the broken-scaling counterevidence.
+- [x] Scope the NPS figures to about 1.4 million acres across the Greater Yellowstone Ecosystem and 793,880 acres inside the park, with multiple fires and extreme weather.
+- [x] Attribute Hugging Face's initial uncertainty separately from its later technical reconstruction and OpenAI's account.
+- [x] Keep Veritasium as narrative inspiration only; the post makes no timestamp-dependent factual claim.
+- [x] Limit the “controlled burn” analogy to deliberately bounded synthetic drills and state that the real incidents were not controlled burns.
+- [x] Separate the 10 a.m. fire-exclusion history from Yellowstone 1988 and from modern prevention of irresponsible human ignitions.
 
 # Publication blockers
 
-- [ ] Resolve or explicitly defer the open claims in `claims.md`.
-- [ ] Add scientific and ecological limits to the analogy.
-- [ ] Correct the Yellowstone scope.
-- [ ] Source or remove the repository-level security-context claim.
+- [x] Resolve or explicitly defer the open claims in `claims.md`.
+- [x] Add scientific and ecological limits to the analogy.
+- [x] Correct the Yellowstone scope.
+- [x] Source or remove the repository-level security-context claim.
 - [ ] Recheck all living incident pages immediately before publication.
 - [ ] Dean approves the final framing, title, and removal of `DRAFT:`.
