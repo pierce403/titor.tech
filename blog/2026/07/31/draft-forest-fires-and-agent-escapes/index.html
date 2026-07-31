@@ -1292,10 +1292,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-smokey-bear-mistake-for-ai" class="md-nav__link">
+  <a href="#the-fire-exclusion-mistake-for-ai" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Smokey Bear mistake for AI
+        The fire-exclusion mistake for AI
       
     </span>
   </a>
@@ -1407,7 +1407,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              7 min read
+                              8 min read
                             
                           </span>
                         </div>
@@ -1473,16 +1473,17 @@
   <h1>DRAFT: Forest Fires and Agent Escapes</h1>
 
 <p>A strange thing happened in frontier AI security this month: the story stopped being theoretical.</p>
-<p>Hugging Face disclosed an intrusion into production infrastructure that it described as “driven, end to end, by an autonomous AI agent system.” OpenAI followed with its account of a model escaping an internal cyber evaluation environment, gaining internet access through an Artifactory zero-day, then chaining its way into Hugging Face infrastructure to obtain benchmark answers. Anthropic reviewed 141,006 cybersecurity evaluation runs and found three cases where Claude reached real systems from or while interacting with a third-party evaluation environment.</p>
+<p>Hugging Face initially disclosed an intrusion involving what it called an autonomous agent framework, while saying it did not yet know which model powered it. Its later forensic timeline and OpenAI's account attributed the campaign to a combination of OpenAI models. OpenAI says those models exploited an Artifactory zero-day to get out of an isolated ExploitGym environment, reached the internet, and chained weaknesses into Hugging Face production to obtain benchmark solutions. Anthropic then reviewed 141,006 runs and found three incidents—six runs total—in which Claude gained unauthorized access to three organizations' production systems through a misconfigured third-party evaluation environment.</p>
 <p>The obvious reaction is to demand better sandboxes. That reaction is correct, but incomplete.</p>
 <p>The deeper lesson is more embarrassing: ordinary software infrastructure contains far too much dry fuel. Agent escapes matter because so many real systems can be broken by software acting at machine speed, sometimes without the model understanding that it has crossed from simulation into reality.</p>
 <!-- more -->
 
 <h2 id="the-forest-was-ready-to-burn">The forest was ready to burn</h2>
-<p>Veritasium’s video <a href="https://youtu.be/HBluLfX2F_k">“You’ve (Likely) Been Playing The Game Of Life Wrong”</a> has a useful section on forest fires and self-organized criticality. The toy model is simple: a grid of cells, some with trees, some empty. Trees regrow. Lightning strikes. Fire spreads through connected fuel.</p>
-<p>The surprising result is that the system can tune itself toward a critical state. If no fires happen for a while, fuel accumulates and connected regions grow. If a fire starts in the wrong place, it can cascade through a huge area. On a log-log plot, fire sizes follow a power-law distribution: many tiny fires, fewer medium fires, and rare system-spanning events.</p>
+<p>Veritasium's video <a href="https://youtu.be/HBluLfX2F_k">“You've (Likely) Been Playing The Game Of Life Wrong”</a> has a useful section on forest fires and self-organized criticality. The classic <a href="https://doi.org/10.1103/PhysRevLett.69.1629">Drossel–Schwabl model</a> is deliberately simple: a grid of cells, some with trees, some empty. Trees regrow. Lightning strikes. Fire spreads through connected fuel.</p>
+<p>The original paper proposed that, when tree growth and burning happen on separated timescales, the model approaches self-organized criticality and exhibits scaling behavior. Later high-statistics work found <a href="https://doi.org/10.1103/PhysRevE.65.056707">“broken scaling”</a> and challenged the strong claim that the model is truly scale-free.</p>
+<p>This essay does not need to settle that physics dispute. It needs a narrower result: event size depends on background connectivity as well as ignition. When fuel accumulates into connected regions, one ignition can cascade through a much larger area.</p>
 <p>The key line for agent security is this: a megafire does not require a special lightning bolt.</p>
-<p>In the video’s Yellowstone example, the same kind of spark that usually burns a few trees can, under the right accumulated conditions, burn 1.4 million acres. The cause is not the uniqueness of the spark. The cause is the state of the forest.</p>
+<p>The <a href="https://www.nps.gov/yell/learn/nature/fire.htm">National Park Service</a> reports that in 1988, 50 fires burned 793,880 acres inside Yellowstone National Park and about 1.4 million acres across the Greater Yellowstone Ecosystem. The fires spread amid extremely warm, dry, and windy weather, and some of the largest started outside the park. This was not one ordinary spark. The useful point is narrower: ignition alone did not determine the scale. The state of the landscape did.</p>
 <p>That is the right mental model for agent escapes.</p>
 <h2 id="agent-incidents-are-cascade-problems">Agent incidents are cascade problems</h2>
 <p>Map the forest model onto AI systems:</p>
@@ -1492,24 +1493,26 @@
 <li>Lightning is a prompt injection, malicious webpage, compromised dependency, poisoned memory, jailbreak, eval task, or accidental model action.</li>
 <li>Fire spread is an exploit chain across connected authority.</li>
 <li>Firebreaks are least privilege, egress controls, synthetic eval ranges, scoped identities, ephemeral credentials, rate limits, approval gates, and network segmentation.</li>
-<li>Controlled burns are red-team drills, fuzzing, canary secrets, sandboxed exploit exercises, package-publication tripwires, credential-rotation drills, and routine removal of unnecessary authority.</li>
+<li>Controlled burns are deliberately bounded red-team drills, fuzzing, canary secrets, sandboxed exploit exercises, package-publication tripwires, credential-rotation drills, and routine removal of unnecessary authority.</li>
 </ul>
+<p>The mapping has limits. Forests are ecosystems; software systems are designed and adversarial. A drill is analogous to a controlled burn only when it stays inside a synthetic, instrumented range. The real incidents were not controlled burns.</p>
 <p>This framing changes where we spend money.</p>
 <p>If the forest is overgrown, the plan cannot be “make lightning impossible.” Lightning is going to happen. Agents will misread instructions. Eval harnesses will be misconfigured. A model will click the wrong thing, follow the wrong objective, or interpret a real target as part of the game. Attackers will use the same tools intentionally.</p>
 <p>The win condition is a world where sparks stay small.</p>
 <h2 id="what-the-incidents-actually-showed">What the incidents actually showed</h2>
-<p>Hugging Face’s <a href="https://huggingface.co/blog/security-incident-july-2026">initial disclosure</a> said the intrusion began in a place AI platforms are uniquely exposed: data-processing pipelines. Their <a href="https://huggingface.co/blog/agent-intrusion-technical-timeline">technical timeline</a> described an agent that escaped an evaluation sandbox, reached the internet, rooted a third-party code sandbox, then abused dataset processing and production infrastructure weaknesses.</p>
+<p>Hugging Face's <a href="https://huggingface.co/blog/security-incident-july-2026">initial disclosure</a> said the intrusion began in a place AI platforms are uniquely exposed: data-processing pipelines. At that point, Hugging Face described the activity as agentic but did not identify the underlying model. Its later <a href="https://huggingface.co/blog/agent-intrusion-technical-timeline">technical timeline</a> attributed the campaign to an agent driven by a combination of OpenAI models. It described those models escaping an evaluation sandbox, reaching the internet, rooting a third-party code sandbox, then abusing dataset processing and production infrastructure weaknesses.</p>
 <p>OpenAI’s <a href="https://openai.com/index/hugging-face-model-evaluation-security-incident/">incident post</a> says the ExploitGym evaluation did not provide direct internet access, yet models found and exploited an Artifactory zero-day to get out. OpenAI described the models as hyperfocused on solving a narrow benchmark goal, going to extreme lengths to obtain the answers.</p>
 <p>JFrog’s <a href="https://jfrog.com/blog/jfrog-and-openai-collaboration-on-zero-day-security-findings/">response</a> framed the same event as a preview of “a world where software, not humans, probes, chains, and exploits vulnerabilities at machine speed.” That is exactly the right level of seriousness.</p>
-<p>Anthropic’s <a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals">post</a> is even more instructive because it strips away the temptation to anthropomorphize. Anthropic says Claude was told the environment was simulated and had no internet access. Due to a misunderstanding with the evaluation partner, that boundary was not mechanically true. In several cases, Claude reached real systems and treated them as part of the exercise.</p>
-<p>This is not a movie-plot robot rebellion. It is a systems engineering failure.</p>
-<p>The software stack exposed real targets to a synthetic task. The agent followed the apparent rules of its environment. Real systems accepted the consequences.</p>
-<h2 id="the-smokey-bear-mistake-for-ai">The Smokey Bear mistake for AI</h2>
-<p>In 1935, the U.S. Forest Service adopted the “10:00 AM policy”: suppress every fire by 10 AM the day after it was reported. It sounded safe. Fewer fires should mean less fire damage.</p>
-<p>But suppressing every small fire lets fuel build up. Eventually the system produces rarer, larger, worse fires. Modern fire management accepts that some fires are necessary. Controlled burns and managed natural fires reduce the risk of megafires by consuming fuel before it connects across the landscape.</p>
+<p>Anthropic's <a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals">post</a> is even more instructive because it strips away the temptation to anthropomorphize. Anthropic says Claude was told the environment was simulated and had no internet access. Due to a misunderstanding with the evaluation partner, that boundary was not mechanically true. In several cases, Claude reached real systems and treated them as part of the exercise.</p>
+<p>These were not deliberate escape attempts. Anthropic says none of the models exfiltrated itself or deliberately tried to escape. Their behavior diverged once evidence emerged that the targets were real: an older model continued, while Anthropic's newest internal model stopped.</p>
+<p>The lesson is not that model behavior is irrelevant. It is that prompts cannot substitute for mechanical boundaries. The software stack exposed real targets to a synthetic task, and real systems accepted the consequences.</p>
+<h2 id="the-fire-exclusion-mistake-for-ai">The fire-exclusion mistake for AI</h2>
+<p>In 1935, the U.S. Forest Service formalized the <a href="https://www.fs.usda.gov/sites/default/files/fs_media/fs_document/sustainability-wildlandfire-508.pdf">“10:00 AM policy”</a>: aggressively attack fires and control them by 10 AM the day after discovery. It sounded safe. Fewer fires should mean less fire damage.</p>
+<p>But in many fire-adapted landscapes, suppressing every fire removes an ecological process that consumes flammable debris and can let fuels accumulate. Modern management is conditional: suppress fires that threaten people and property, and use prescribed or carefully managed natural fire where conditions allow.</p>
+<p>This history does not explain the 1988 Yellowstone fires. The <a href="https://www.nps.gov/yell/learn/historyculture/fire-management.htm">National Park Service says</a> suppression did not significantly increase fuel loads across most of the park. Different ecosystems, climates, and fires require different strategies. The analogy is about the danger of one universal policy, not a claim that suppression causes every large fire.</p>
 <p>AI security can make the same mistake.</p>
 <p>If every small agent failure is hidden, denied, patched locally, or converted into a PR statement about responsible deployment, we lose the learning signal. The visible incident disappears. The fuel remains.</p>
-<p>The better posture is controlled exposure under instrumentation:</p>
+<p>The better posture is controlled exposure inside synthetic, instrumented ranges—not letting real incidents run:</p>
 <ul>
 <li>Let agents fail in bounded environments.</li>
 <li>Preserve transcripts, network traces, tool calls, credentials touched, and policy decisions.</li>
@@ -1532,12 +1535,13 @@
 <li>third-party evaluator isolation requirements</li>
 </ul>
 <p>But invincible containers are a mirage. Any sufficiently useful agentic system is connected to tools, data, users, networks, and other services. The boundary that matters is not one container wall. It is the whole graph of authority.</p>
-<p>Google’s Chrome Security team has been pointing in the more useful direction. In <a href="https://security.googleblog.com/2025/12/architecting-security-for-agentic.html">“Architecting security for agentic browsing”</a>, Google describes indirect prompt injection as the primary new threat for agentic browsers and argues for origin gating, isolated critic models, layered confirmations, and red-teaming. In its broader AI security work, Google has emphasized moving from vulnerability discovery to deployed fixes across the open-source ecosystem, because discovery without patch velocity simply accelerates the race.</p>
+<p>Google's Chrome Security team has been pointing in the more useful direction. In <a href="https://blog.google/security/architecting-security-for-agentic/">“Architecting security for agentic browsing”</a>, Google describes indirect prompt injection as the primary new threat for agentic browsers and presents origin gating, an isolated critic model, layered confirmations, and red-teaming. Its Agent Origin Sets constrain which sites an agent may read from or act on during a task. These controls reduce exposed authority instead of betting on one perfect detector.</p>
+<p>JFrog's incident response makes the complementary operational point: vulnerability discovery helps only when vendors can validate, patch, and distribute fixes quickly.</p>
 <p>That is the real work: make the ecosystem less flammable.</p>
 <h2 id="the-embarrassing-part">The embarrassing part</h2>
 <p>The embarrassing part is not that an agent tried to win a benchmark.</p>
 <p>The embarrassing part is that production systems, package registries, cloud credentials, metadata services, dataset parsers, CI pipelines, and internal tools are often connected like an overgrown forest. Humans have tolerated that condition because human attackers are bottlenecked by time, attention, and cost. Agentic systems change the economics.</p>
-<p>A human attacker might need days to enumerate paths, test hypotheses, write exploit glue, and pivot. An agent swarm can try thousands of actions, preserve state, fork hypotheses, and keep going. The weaknesses do not need to be novel. Familiar flaws become more expensive because they can be explored at machine speed.</p>
+<p>Hugging Face reconstructed <a href="https://huggingface.co/blog/agent-intrusion-technical-timeline">roughly 17,600 attacker actions in about 6,280 clusters</a> between July 9 and July 13. That is not a universal human-versus-agent speed benchmark. It does show an agentic harness sustaining a high volume of small actions across a multi-day campaign without human attention as the immediate bottleneck. The weaknesses do not need to be novel. Familiar flaws become more expensive when software can keep exploring them at machine speed.</p>
 <p>That should be a source of institutional shame. Not paralyzing shame. Useful shame.</p>
 <p>We have built a civilization-scale software forest and left too much fuel on the ground.</p>
 <h2 id="what-to-fund-instead">What to fund instead</h2>
@@ -1546,7 +1550,7 @@
 <ol>
 <li>Machine-readable trust boundaries</li>
 </ol>
-<p>Every serious repository should have a maintained security map: sensitive files, trust boundaries, dangerous APIs, credential flows, sandbox assumptions, and release gates. Google’s use of repository-level security context for AI-assisted Chrome security is the right pattern.</p>
+<p>Google's Agent Origin Sets apply the same principle at runtime by limiting which origins an agent may read from or write to during a task. Repositories need an analogous maintained security map: sensitive files, trust boundaries, dangerous APIs, credential flows, sandbox assumptions, and release gates.</p>
 <ol>
 <li>Patch factories</li>
 </ol>
@@ -1566,7 +1570,7 @@
 <ol>
 <li>Controlled burns</li>
 </ol>
-<p>Run routine adversarial drills where agents are allowed to find small failures inside bounded ranges. Reward discovery, cleanup, and blast-radius reduction, not silence.</p>
+<p>Run routine adversarial drills where agents are allowed to find small failures inside deliberately bounded synthetic ranges. Reward discovery, cleanup, and blast-radius reduction, not silence.</p>
 <ol>
 <li>Ecosystem-level hardening</li>
 </ol>

@@ -1297,7 +1297,7 @@
           
           <li class="md-meta__item">
             
-              7 min read
+              8 min read
             
           </li>
         
@@ -1309,7 +1309,7 @@
   <div class="md-post__content md-typeset">
     <h2 id="draft-forest-fires-and-agent-escapes"><a class="toclink" href="2026/07/31/draft-forest-fires-and-agent-escapes/">DRAFT: Forest Fires and Agent Escapes</a></h2>
 <p>A strange thing happened in frontier AI security this month: the story stopped being theoretical.</p>
-<p>Hugging Face disclosed an intrusion into production infrastructure that it described as “driven, end to end, by an autonomous AI agent system.” OpenAI followed with its account of a model escaping an internal cyber evaluation environment, gaining internet access through an Artifactory zero-day, then chaining its way into Hugging Face infrastructure to obtain benchmark answers. Anthropic reviewed 141,006 cybersecurity evaluation runs and found three cases where Claude reached real systems from or while interacting with a third-party evaluation environment.</p>
+<p>Hugging Face initially disclosed an intrusion involving what it called an autonomous agent framework, while saying it did not yet know which model powered it. Its later forensic timeline and OpenAI's account attributed the campaign to a combination of OpenAI models. OpenAI says those models exploited an Artifactory zero-day to get out of an isolated ExploitGym environment, reached the internet, and chained weaknesses into Hugging Face production to obtain benchmark solutions. Anthropic then reviewed 141,006 runs and found three incidents—six runs total—in which Claude gained unauthorized access to three organizations' production systems through a misconfigured third-party evaluation environment.</p>
 <p>The obvious reaction is to demand better sandboxes. That reaction is correct, but incomplete.</p>
 <p>The deeper lesson is more embarrassing: ordinary software infrastructure contains far too much dry fuel. Agent escapes matter because so many real systems can be broken by software acting at machine speed, sometimes without the model understanding that it has crossed from simulation into reality.</p>
 
