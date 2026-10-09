@@ -48,8 +48,10 @@ publishes each production commit using credentials retained in Cloudflare.
 GitHub Actions validates and retains artifacts; it needs no Cloudflare secrets.
 `.nvmrc` and `.python-version` select Node.js 22 and Python 3.12.
 
-The configuration initially uses `titor-tech.bcrt43.workers.dev`. Attach
-`titor.tech` only after its Cloudflare zone/import is verified. Keep `docs/CNAME`
-and the prior `gh-pages` deployment for recovery. Do not overlap manual deployment
-with native Git deployment. Git connection, deployment, domain and DNS verification
-remain separate migration steps recorded in `NOTES.md`.
+`wrangler.jsonc` declares the exact Custom Domain `titor.tech` and keeps
+`titor-tech.bcrt43.workers.dev` enabled. Publish the route change only after
+Cloudflare reports the zone active and the DNS import is verified. The native
+Git deployment then provisions the hostname's Worker DNS and TLS; serving and
+DNS cutover must still be verified. Keep `docs/CNAME` and the prior `gh-pages`
+deployment for recovery. Do not overlap manual deployment with native Git builds.
+`NOTES.md` records preparation separately from live migration evidence.
