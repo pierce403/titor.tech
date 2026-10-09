@@ -1,0 +1,16 @@
+{
+  "name": "titor-tech",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "bash scripts/build-cloudflare.sh",
+    "dev": "npm run build && wrangler dev",
+    "deploy:check": "npm run build && wrangler deploy --dry-run"
+  },
+  "devDependencies": {
+    "wrangler": "4.145.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -13,6 +13,7 @@ Start here, then load only the context relevant to the task.
 
 | Path | Purpose | Read when |
 | --- | --- | --- |
+| `NOTES.md` | Native Cloudflare publishing configuration and hosting verification | Publishing or migrating hosting |
 | `KNOWLEDGE.md` | Stable mission, voice, terminology, and John Titor context | Editing public content or making mission-level decisions |
 | `memory/notes/blog/index.md` | Catalog of blog dossiers | Creating, revising, or reviewing a post |
 | `memory/notes/blog/<slug>/` | Brief, source ledger, claim ledger, and work log for one post | Working on that post |
