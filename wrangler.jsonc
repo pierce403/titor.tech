@@ -23,8 +23,8 @@
   },
   "routes": [
     {
-      "pattern": "titor.tech",
-      "custom_domain": true
+      "pattern": "titor.tech/*",
+      "zone_name": "titor.tech"
     }
   ]
 }

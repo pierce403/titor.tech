@@ -48,10 +48,16 @@ publishes each production commit using credentials retained in Cloudflare.
 GitHub Actions validates and retains artifacts; it needs no Cloudflare secrets.
 `.nvmrc` and `.python-version` select Node.js 22 and Python 3.12.
 
-`wrangler.jsonc` declares the exact Custom Domain `titor.tech` and keeps
-`titor-tech.bcrt43.workers.dev` enabled. Publish the route change only after
-Cloudflare reports the zone active and the DNS import is verified. The native
-Git deployment then provisions the hostname's Worker DNS and TLS; serving and
-DNS cutover must still be verified. Keep `docs/CNAME` and the prior `gh-pages`
-deployment for recovery. Do not overlap manual deployment with native Git builds.
-`NOTES.md` records preparation separately from live migration evidence.
+`wrangler.jsonc` prepares the ordinary Worker route `titor.tech/*` in zone
+`titor.tech`, covering paths on this exact hostname, and keeps
+`titor-tech.bcrt43.workers.dev` enabled. Retain the original website A values
+with Cloudflare proxying enabled; the route uses those records without deleting
+them or provisioning a Custom Domain. Static Assets serves files and terminal
+404 responses without a Worker script or origin-fetch fallback.
+
+Publish the reviewed route only after the zone and certificate are active and
+the DNS import is verified. Then verify the exact native Git commit/build/version,
+custom-host HTTPS, HTTP upgrade, wiki behavior and retained DNS records. Keep
+`docs/CNAME`, the prior `gh-pages` deployment and website A values for recovery.
+Do not overlap manual deployment with native Git builds. `NOTES.md` distinguishes
+this local preparation from live cutover evidence.
