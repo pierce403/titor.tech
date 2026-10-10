@@ -110,3 +110,16 @@ For meaningful tasks:
   upgrade, wiki behavior, real 404 and retained records before claiming cutover.
 - Record checks and unresolved gates in `NOTES.md`; local build success does not
   prove live hosting or DNS state.
+
+## Sharp security maintenance
+
+- Wrangler 4.145.0 brings Miniflare with an exact sharp 0.35.4 dependency.
+  The npm override pins sharp to 0.35.5 for
+  [GHSA-wq5f-xc86-pv6w](https://github.com/advisories/GHSA-wq5f-xc86-pv6w),
+  including the patched libvips binaries. Regenerate the lockfile with npm,
+  validate `npm ci`, the strict site build and the deployment dry run, and
+  remove the override once the pinned upstream tooling selects a patched sharp.
+- Validate lockfile changes with npm 10 (used by Node 22 CI) as well as newer
+  npm versions. A nested Miniflare-only override passed npm 11 locally but
+  npm 10 `npm ci` still demanded the vulnerable 0.35.4 dependency; the
+  sharp-level override handles the complete deployment-tooling dependency tree.
